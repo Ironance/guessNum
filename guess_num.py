@@ -26,5 +26,9 @@ while True:
     else:
         if ans > user_ans:
             print('The answer is greater than', user_ans)
+            limit_low = user_ans + 1
+            print('Range of the remained numbers is', limit_low, 'to', limit_up)
         else:
             print('The answer is less than', user_ans)
+            limit_up = user_ans - 1
+            print('Range of the remained numbers is', limit_low, 'to', limit_up)
