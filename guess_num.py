@@ -1,6 +1,18 @@
 import random
 
-ans = random.randint(1,100)
+range_ok = False
+
+while range_ok == False:
+    limit_low = input('Please input the lower limit of the range:')
+    limit_up = input('Please input the upper limit of the range:')
+    if limit_low < limit_up:
+        range_ok = True
+    else:
+        print('Something wrong in range setting! Please set again.')
+
+limit_low = int(limit_low)
+limit_up = int(limit_up)
+ans = random.randint(limit_low,limit_up)
 guess_count = 0
 
 while True:
